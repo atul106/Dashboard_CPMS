@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+</head>
+<body>
+<section class="banner d-flex justify-content-center align-items-center ">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">BULK</h5>
+<!--                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/bulk}" class="btn btn-primary">Go To Bulk</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">WB</h5>
+<!--                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/wb}" class="btn btn-primary">Go to WB</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">OD</h5>
+<!--                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/OD}" class="btn btn-primary">Go to OD</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">PP</h5>
+<!--                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/PP}" class="btn btn-primary">Go to PP</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">RR</h5>
+                    <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/RR}" class="btn btn-primary">Go to RR</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">SNA Punjab</h5>
+                    <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/SNA_PJ}" class="btn btn-primary">Go to SNA Punjab</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">SNA Rajasthan</h5>
+                    <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/SNA_RJ}" class="btn btn-primary">Go to SNA Rajasthan</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Create Entity</h5>
+                    <!--  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                    <a th:href="@{/create-entity}" class="btn btn-primary">Create Entity</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

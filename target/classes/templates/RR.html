@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>RR</title>
+</head>
+<body>
+<section class="banner d-flex justify-content-center ">
+
+    <div class="card-body card-title">
+
+    <table class="table table-bordered" bgcolor="white" >
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Work</th>
+            <th scope="col">Action</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="c:${contacts}">
+            <th scope="row" th:text="${c.cId}">1</th>
+            <td th:text="${c.name}">Mark</td>
+            <td th:text="${c.email}">Otto</td>
+            <td th:text="${c.phone}">@mdo</td>
+            <td th:text="${c.secondName}">@mdo</td>
+            <td th:text="${c.work}">@mdo</td>
+            <td>
+                <button class="btn btn-danger btn-sm">Delete</button>
+                <button class="btn btn-primary btn-sm">Update</button>
+            </td>
+        </tr>
+<!--        <tr>-->
+<!--            <th scope="row">2</th>-->
+<!--            <td>Jacob</td>-->
+<!--            <td>Thornton</td>-->
+<!--            <td>@fat</td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th scope="row">3</th>-->
+<!--            <td colspan="2">Larry the Bird</td>-->
+<!--            <td>@twitter</td>-->
+<!--        </tr>-->
+        </tbody>
+    </table>
+
+    </div>
+
+</section>
+</body>
+</html>

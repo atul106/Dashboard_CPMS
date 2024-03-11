@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.1/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>About</title>
+</head>
+<body>
+<section class="banner d-flex justify-content-center align-items-center">
+
+    <div class="container">
+
+        <div class="row">
+            <!-- First Card in the First Row -->
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body" th:each="d:${Cpms1}">
+                        <h5 class="card-title">No. of Distinct Columns in database - </h5>
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                        <h3 class="card-text" th:text="${d}"></h3>
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card in the First Row -->
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body" th:each="e:${Cpms2}">
+                        <h5 class="card-title">No. of people in Mumbai City</h5>
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                        <h3 class="card-text" th:text="${e}"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Third Card in the Second Row -->
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card in the Second Row -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+</body>
+</html>

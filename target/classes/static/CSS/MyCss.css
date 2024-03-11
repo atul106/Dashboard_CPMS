@@ -1,0 +1,30 @@
+body{
+    background: #0909a2;
+}
+
+img{
+    width: 15%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.container{
+    background: cyan;
+    margin-top: 3%;
+    max-width: 50%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    border-radius: 4%;
+
+}
+.container-cyan{
+    background: cyan;
+    margin-top: 3%;
+    max-width: 50%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    border-radius: 5%;
+
+}
+
+

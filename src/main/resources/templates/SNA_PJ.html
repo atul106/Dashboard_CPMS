@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>SNA_PJ</title>
+</head>
+<body>
+<section class="banner d-flex justify-content-center align-items-center">
+    <h2>Create Folder</h2>
+
+    <form action="/createFolder" method="post">
+
+    <div class="form my-5">
+        <div class="form-row my-2">
+            <div class="col">
+                FILE_ENTITY<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_DOWNLOAD_PATH<input type="text" class="form-control" >
+            </div>
+    </form>
+
+</section>
+</body>
+</html>

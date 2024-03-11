@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>New Entity</title>
+</head>
+<body>
+<section>
+    <form id="createFolderForm" action="/create-folder" method="post">
+        <div class="mb-3 my-4 mx-5">
+            <label for="exampleInputPassword1" class="form-label">Entity Name </label>
+            <input type="text" class="form-control" id="exampleInputPassword1" name="folderName">
+        </div>
+        <button type="submit" class="btn btn-primary mx-5">Create Entity</button>
+    </form>
+
+
+</section>
+
+<script>
+    document.getElementById("createFolderForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get form data
+        let formData = new FormData(this);
+
+        // Send AJAX request
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.text()) // Parse response text
+            .then(data => {
+                // Display response message
+                alert(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>
+</body>
+</html>

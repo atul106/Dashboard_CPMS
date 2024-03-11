@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>New Entity</title>
+
+</head>
+<body>
+<section class="banner create-page">
+<!--<section>-->
+<form>
+    <div class="form my-5">
+        <div class="form-row my-2">
+            <div class="col">
+                FILE_ENTITY<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_DOWNLOAD_PATH<input type="text" class="form-control" >
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+                LOCAL_DOWNLOAD_PATH<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_UPLOAD_PATH_REQACK<input type="text" class="form-control" >
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+                HOMEPATH<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_UPLOAD_PATH_RESACK<input type="text" class="form-control">
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+                ENTITY_NAME<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                USERNAME<input type="text" class="form-control">
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+                USERID<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                CMS_HUB_IFSC<input type="text" class="form-control">
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+               CMS_HUB_ACCNO<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                NARRATION<input type="text" class="form-control">
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+                PRODUCT_TYPE<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_HOST<input type="text" class="form-control">
+            </div>
+
+        </div>
+        <div class="form-row my-2">
+            <div class="col">
+               SFTP_PORT<input type="text" class="form-control">
+            </div>
+            <div class="col my-0.5">
+                SFTP_USER<input type="text" class="form-control" >
+            </div>
+
+        </div>
+        <div class="form-row my-2 mx-10">
+            <div class="col">
+                SFTP_PASSWORD<input type="password" class="form-control">
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+
+
+
+
+<!--            <div class="row my-3">-->
+
+<!--                <div class="col-md-15 ">-->
+
+<!--&lt;!&ndash;                    <div class="tab-content" id="myTabContent">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <h3 class="register-heading">Apply as a Employee</h3>&ndash;&gt;-->
+<!--                            <div class="row register-form">-->
+<!--                                <div class="col-md-6">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="FILE_ENTITY" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="SFTP_DOWNLOAD_PATH" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="LOCAL_DOWNLOAD_PATH" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="SFTP_UPLOAD_PATH_REQACK" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="HOMEPATH" value="" />-->
+<!--                                    </div>-->
+
+
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="SFTP_UPLOAD_PATH_RESACK" value="" />-->
+<!--                                    </div>-->
+
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="password" class="form-control" placeholder="ENTITY_NAME" value="" />-->
+<!--                                    </div>-->
+
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="password" class="form-control"  placeholder="USERNAME" value="" />-->
+<!--                                    </div>-->
+
+<!--&lt;!&ndash;                                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="maxl">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <label class="radio inline">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <input type="radio" name="gender" value="male" checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span> Male </span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <label class="radio inline">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <input type="radio" name="gender" value="female">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span>Female </span>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+
+<!--                                </div>-->
+
+<!--                                <div class="row my-3">-->
+<!--                                <div class="col-md-7">-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="USERID" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="CMS_HUB_IFSC" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="CMS_HUB_ACCNO" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="NARRATION" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="PRODUCT_TYPE" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="SFTP_HOST" value="" />-->
+<!--                                    </div>-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="email" class="form-control" placeholder="SFTP_PORT" value="" />-->
+<!--                                    </div>-->
+<!--&lt;!&ndash;                                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <select class="form-control">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <option class="hidden"  selected disabled>Please select your Sequrity Question</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <option>What is your Birthdate?</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <option>What is Your old Phone Number</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <option>What is your Pet Name?</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--                                    <div class="form-group">-->
+<!--                                        <input type="text" class="form-control" placeholder="SFTP_USER" value="" />-->
+<!--                                    </div>-->
+
+
+
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-control" placeholder="SFTP_PASSWORD" value="" />-->
+<!--                    </div>-->
+<!--                    <input type="submit" class="btnRegister"  value="Register"/>-->
+<!--                        </div>-->
+
+
+<!--                        </div>-->
+
+
+
+</form>
+
+
+
+
+
+</section>
+</body>
+</html>
