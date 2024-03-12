@@ -5,7 +5,10 @@ import com.dashboard.Dao.tableRepository;
 import com.dashboard.entities.Contact;
 import com.dashboard.entities.Cpms;
 import com.dashboard.entities.LoginData;
+import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
+import org.aspectj.bridge.Message;
+import org.jboss.logging.Messages;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.File;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class HomeController {
@@ -152,7 +156,7 @@ public class HomeController {
     @ResponseBody
     public String createFolder(@RequestParam String folderName) {
 
-        String mainFolderPath = "C:\\Users\\atul\\Desktop\\";
+        String mainFolderPath = "C:\\Users\\adity\\3D Objects\\";
 
         // Create the main folder
         File mainFolder = new File(mainFolderPath + folderName);
@@ -179,4 +183,17 @@ public class HomeController {
 
 
 
-}   }
+}
+@GetMapping("/delete/{cId}")
+    public String deleteContact(@PathVariable("cId")Integer cId, Model m, HttpSession session){
+
+    Optional<Contact> contactOptional = this.tableRepository.findById(cId);
+    Contact contact = contactOptional.get();
+    this.tableRepository.delete(contact);
+
+    return "redirect:/RR";
+
+}
+
+
+}

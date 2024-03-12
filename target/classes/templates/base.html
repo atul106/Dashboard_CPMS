@@ -28,9 +28,7 @@
             <li class="nav-item active">
                 <a class="nav-link" th:href="@{/home}">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" th:href="@{/about}">About</a>
-            </li>
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Agency
@@ -43,10 +41,16 @@
                     <a th:href="@{/RR}" class="dropdown-item">RR</a>
                     <a th:href="@{/SNA_PJ}" class="dropdown-item">SNA Punjab</a>
                     <a th:href="@{/SNA_RJ}" class="dropdown-item">SNA Rajasthan</a>
-                    <a th:href="@{/create-entity}" class="dropdown-item">Create Entity</a>
                     <div class="dropdown-divider"></div>
+                    <a th:href="@{/create-entity}" class="dropdown-item">Create Entity</a>
+                    <a th:href="@{/create-entity-folder}" class="dropdown-item">Create Entity Folder</a>
+
+
 <!--                    <a class="dropdown-item" href="#"></a>-->
                 </div>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/about}">About</a>
+            </li>
             </li>
             <li class="nav-item">
                 <a class="nav-link " th:href="@{/form}" tabindex="-1" aria-disabled="true">LogOut</a>
@@ -67,10 +71,12 @@
     <a th:href="@{/RR}" class="item">RR</a>
     <a th:href="@{/SNA_PJ}" class="item">SNA Punjab</a>
     <a th:href="@{/SNA_RJ}" class="item">SNA Rajasthan</a>
+    <div class="divider"></div>
     <a th:href="@{/create-entity}" class="item">Create Entity</a>
     <a th:href="@{/create-entity-folder}" class="item">Create Entity Folder</a>
     <a th:href="@{/form}" class="item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
     <div class="divider"></div>
+
 </div>
 
 
