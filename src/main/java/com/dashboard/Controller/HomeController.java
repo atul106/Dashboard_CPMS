@@ -82,6 +82,12 @@ public class HomeController {
             return "bulk";
         }
 
+    @RequestMapping("/bulk-entities")
+    public String bulk_entities(){
+
+        return "bulk-entities";
+    }
+
     @RequestMapping("/wb")
     public String wb(){
 
@@ -102,6 +108,12 @@ public class HomeController {
 
         Long city = distinctRepository.countByCityMumbai();
         m.addAttribute("Cpms2",city);
+
+        Long txn = distinctRepository.countBytxnRTGS();
+        m.addAttribute("Cpms3",txn);
+
+        Long txn_status = distinctRepository.countBytxnstatus();
+        m.addAttribute("Cpms4",txn_status);
 
         m.addAttribute("Cpms1",rowCount);
         m.addAttribute("Cpms",cpms);

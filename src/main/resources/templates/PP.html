@@ -40,20 +40,22 @@
             <!-- Third Card in the Second Row -->
             <div class="col-sm-6 mb-3 mb-sm-0">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body" th:each="f:${Cpms3}">
+                        <h5 class="card-title">No. of people using RTGS payment</h5>
+                        <h3 class="card-text" th:text="${f}"></h3>
+<!--                        <p class="card-text"></p>-->
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
                     </div>
                 </div>
             </div>
             <!-- Fourth Card in the Second Row -->
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-body" th:each="g:${Cpms4}">
+                        <h5 class="card-title">No. of Transactions Status Completed</h5>
+                        <h3 class="card-text" th:text="${g}"></h3>
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                        <a href="#" class="btn btn-primary">Go somewhere</a>-->
                     </div>
                 </div>
             </div>

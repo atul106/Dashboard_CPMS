@@ -10,4 +10,10 @@ public interface distinctRepository extends JpaRepository<Cpms,Integer> {
 
     @Query("SELECT COUNT(c) FROM Cpms c WHERE c.City = 'Mumbai'")
     Long countByCityMumbai();
+
+    @Query("SELECT COUNT(e) FROM Cpms e WHERE e.txn = 'RTGS'")
+    Long countBytxnRTGS();
+
+    @Query("SELECT COUNT(f) FROM Cpms f WHERE f.txn_status = 'Complete'")
+    Long countBytxnstatus();
 }

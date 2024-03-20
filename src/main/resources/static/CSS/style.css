@@ -4,6 +4,48 @@ body {
     padding: 0;
 }
 
+.bg-cherry {
+    background: linear-gradient(#c0679c, #ef119a) !important;
+    color: #fff;
+}
+
+.bg-blue-dark {
+    background: linear-gradient(#a9b8ef, #076fc9) !important;
+    color: #fff;
+}
+
+.bg-green-dark {
+    background: linear-gradient(#0a504a, #38ef7d) !important;
+    color: #fff;
+}
+
+.bg-orange-dark {
+    background: linear-gradient(#a86008, #ffba56) !important;
+    color: #fff;
+}
+
+.bg-yellow-dark {
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+
+}
+
+.bg-red-dark {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+}
+
+.bg-mix-dark {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.bg-create-entity-dark{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+}
 
 
 .bg-yellow {
@@ -73,14 +115,14 @@ body {
     flex-basis: calc(90% - 30%); /* Adjust width and space between cards */
 }
 
-.card {
-    width: 50%;
-    border: 1px solid #dee2e6;
-    border-radius: .25rem;
-}
+/*.card {*/
+/*    width: 50%;*/
+/*    border: 2px solid #cc102c;*/
+/*    border-radius: .25rem;*/
+/*}*/
 
 .card-body {
-    padding: 11%;
+    padding: 5%;
     color: #1f77ce;
 
 
@@ -145,6 +187,13 @@ body {
     .content{
         margin-left: 0 !important;
     }
+
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
 }
 
 .sidebar{
@@ -200,41 +249,6 @@ body {
 }
 
 
-:root {
-    --blue: #5e72e4;
-    --indigo: #5603ad;
-    --purple: #8965e0;
-    --pink: #f3a4b5;
-    --red: #f5365c;
-    --orange: #fb6340;
-    --yellow: #ffd600;
-    --green: #2dce89;
-    --teal: #11cdef;
-    --cyan: #2bffc6;
-    --white: #fff;
-    --gray: #8898aa;
-    --gray-dark: #32325d;
-    --light: #ced4da;
-    --lighter: #e9ecef;
-    --primary: #5e72e4;
-    --secondary: #f7fafc;
-    --success: #2dce89;
-    --info: #11cdef;
-    --warning: #fb6340;
-    --danger: #f5365c;
-    --light: #adb5bd;
-    --dark: #212529;
-    --default: #172b4d;
-    --white: #fff;
-    --neutral: #fff;
-    --darker: black;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: Open Sans, sans-serif;
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-}
+
 
 
